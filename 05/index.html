@@ -1,55 +1,67 @@
 <!doctype html>
 <html>
 <head>
-    <title>CSS Inline</title>
+    <title>Minha primeira página CSS</title>
     <meta charset="utf-8" />
     <style type="text/css">
-        p {
-            color: red;
-            border: 1px solid blue;
+        body {
+            padding-left: 11em;
+            font-family: Georgia, "Times New Roman", Times, serif;
+            color: purple;
+            background-color: #dccd11;
         }
-        h1 {
-            font-size: 80px;
+        ul.navbar {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            top: 2em;
+            left: 1em;
+            width: 9em;
         }
-        h1, h2, p {
-            color: green;
+        ul.navbar li {
+            background: white;
+            margin: 0.5em 0;
+            padding: 0.3em;
+            border-right: 1em solid black;
         }
-        .minha_classe {
+        ul.navbar a {
+            text-decoration: none;
+        }
+        a:link {
             color: blue;
-            border: 2px solid red;
         }
-        #verde {
-            color: green;
+        a:visited {
+            color: purple;
+        }
+        address {
+            margin-top: 1em;
+            padding-top: 1em;
+            border-top: 1px dotted gray;
         }
     </style>
 </head>
 <body>
 
-    <h1>Stilo CSS</h1>
+    <ul class="navbar">
+        <li><a href="index.html">Home page</a></li>
+        <li><a href="pensamentos.html">Pensamentos</a></li>
+        <li><a href="cidade.html">Minha cidade</a></li>
+        <li><a href="links.html">Links</a></li>
+    </ul>
 
-    <p style="color: red; border: 1px solid blue">
-        Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.
-    </p>
+    <h1>Minha primeira página CSS</h1>
 
-    <p style="color: green;">
-        Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.
-    </p>
+    <p>Bem vindos à minha página estilizada!</p>
 
-    <p>
-        Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.
-    </p>
+    <p>Minha página não contém imagens, mas está estilizada. Ela contém links, que não levam a lugar algum...</p>
 
-    <p style="color: green;">
-        Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos.
-    </p>
+    <p>Deveria haver mais textos aqui porém eu ainda não decidi o que escrever.</p>
 
-    <p class="minha_classe">
-        Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.
-    </p>
-
-    <h1 class="minha_classe">Stilo CSS</h1>
-
-    <h1 id="verde">Stilo CSS</h1>
+    <address>
+        Construída em 15 de dezembro de 2004<br>
+        por mim mesmo.
+    </address>
 
 </body>
 </html>
